@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+
+    <script src="../Lieferando/script.js"></script>
+    <link rel="stylesheet" href="../Lieferando/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Sansita+Swashed:wght@300&family=Shadows+Into+Light&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body onload="render()">
+
+    <div class="top">
+        <img class="logo" src="img/LogoMakr-4Rkama.png">
+        
+        <p><b>Große Straße 40, 49477 Ibbenbüren</b></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <div class="big-container">
+        
+        <div class="food">
+        <img class="pizza-pic" src="img/pizza3.jpg">
+        <img class="fieramosca" src="img/Logo_Pizzeria.jpg">
+        <h1>Pizzeria Fieramosca</h1> 
+        
+
+        <div class="menu">
+            <a href="#Pizza">Pizza</a>
+            <a href="#Pasta">Pasta</a> 
+            <a href="#Salat">Salat</a> 
+            <a href="#Pizzabrötchen">Pizzabrötchen</a> 
+            <a href="#Antipasti">Antipasti</a> 
+            <a href="#Dessert">Dessert</a>
+            <a href="#Getränke">Getränke</a>
+          </div>
+
+          <div class="popular-dishes">
+              <h2>BELIEBTE GERICHTE</h2>
+          </div>
+
+          <div class="food-container">
+            <button onclick="addToCart('Pizza Mama Mia',8.90, 0)"><b>+</b></button> 
+              <h2>Pizza Mama Mia</h2>
+              <i>mit schwarzen Oliven, Sardellen, Kapern und roter Paprika</i>
+              <h3><b>8,90€</b></h3>
+          </div>
+
+          <div class="food-container">
+            <button onclick="addToCart('Pasta Gorgonzola',7.50, 1)"><b>+</b></button> 
+            <h2>Pasta Gorgonzola</h2>
+            <i>mit Gorgonzola und Sahnesauce</i>
+            <h3><b>7,50€</b></h3>
+        </div>
+
+        <div class="food-container">
+            <button onclick="addToCart('Pizzabrötchen Patore',5.50, 2)"><b>+</b></button> 
+            <h2>Pizzabrötchen Pastore</h2>
+            <i>gefüllt mit Fetakäse, Spinat und Gouda</i>
+            <h3><b>5,50€</b></h3>
+        </div>
+
+        <img class="pasta-pic" src="img/Pasta1.jpg">
+
+        <div class="pasta">
+            <h2>PASTA</h2>
+        </div>
+
+        <div class="food-container">
+            <button onclick="addToCart('Spaghetti Bolognese',6.90, 3)"><b>+</b></button> 
+            <h2>Spaghetti Bolognese</h2>
+            <i>mit Tomatensauce, Hackfleisch und Käse</i>
+            <h3><b>6,90€</b></h3>
+        </div>
+
+        <div class="food-container">
+            <button onclick="addToCart('Penne Arrabbiata',7.00, 4)"><b>+</b></button> 
+          <h2>Penne Arrabbiata</h2>
+          <i>mit Tomatensauce (scharf) und Knoblauch</i>
+          <h3><b>7,00€</b></h3>
+      </div>
+
+      <div class="food-container">
+        <button onclick="addToCart('Spaghetti Frutti di Mare',9.90, 5)"><b>+</b></button> 
+          <h2>Spaghetti Frutti di Mare</h2>
+          <i>mit Meeresfrüchten und Tomatensauce</i>
+          <h3><b>9,90€</b></h3>
+      </div>
+
+        </div>
+
+        <div class="shopping-cart">
+            <div class="cart-top">
+                <h1>Kasse</h1>
+                <img class="cart" src="img/shopping-cart-64.jpg">
+            </div>
+            <h2>Deine Bestellung</h2><br>
+        <div class="food-order" id="order"></div>
+            <h2>Gesamtpreis:</h2>
+            <div class="total-price" id="total"></div>
+        </div> 
+
+</body>
+
+</html>
